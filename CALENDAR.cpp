@@ -16,12 +16,6 @@ int main()
 	char week[7][3]={{'S','u','n'},{'M','o','n'},{'T','u','e'},{'W','e','d'},{'T','h','u'},{'F','r','i'},{'S','a','t'}};
 	cout<<week[day(dd,mm,yy)][0]<<week[day(dd,mm,yy)][1]<<week[day(dd,mm,yy)][2]<<"\n";
 	month(mm,yy);
-	/*char year[12][3]={{'J','a','n'},{'F','e','b'},{'M','a','r'},{'A','p','r'},{'M','a','y'},{'J','u','n'},{'J','u','l'},{'A','u','g'},{'S','e','p'},{'O','c','t'},{'N','o','v'},{'D','e','c'}};
-	for(i=1;i<=12;i++)
-	{
-		cout<<year[i-1][0]<<year[i-1][1]<<year[i-1][2]<<"\n";
-		month(i,yy);
-	}*/
 	year(yy);
 	cout<<"Rishav Saini \n 1611981308 \n UCA-11-2";
 }
@@ -69,7 +63,7 @@ void month(int mm,int yy)
 	int ly[2]={28,29};
 	int days[12]={31,ly[leap(yy)],31,30,31,30,31,31,30,31,30,31};
 	z=day(dd,mm,yy);
-	cout<<"S  M  T  W  T  F  S  \n";
+	cout<<"S\tM\tT\tW\tT\tF\tS\n";
 	while(c<=days[mm-1])
 	{
 		if(z==i)
