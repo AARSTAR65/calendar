@@ -88,7 +88,7 @@ void year(int yy)
 {
 	int i;
 	char year[12][3]={{'J','a','n'},{'F','e','b'},{'M','a','r'},{'A','p','r'},{'M','a','y'},{'J','u','n'},{'J','u','l'},{'A','u','g'},{'S','e','p'},{'O','c','t'},{'N','o','v'},{'D','e','c'}};
-	for(i=1;i<=12;i++);
+	for(i=1;i<=12;i++)
 	{
 		cout<<year[i-1][0]<<year[i-1][1]<<year[i-1][2]<<"\n";
 		month(i,yy);
